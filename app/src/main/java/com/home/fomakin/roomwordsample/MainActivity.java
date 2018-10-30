@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //test git
+
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         final WordListAdapter adapter = new WordListAdapter(this);
         recyclerView.setAdapter(adapter);
