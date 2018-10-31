@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.home.fomakin.roomwordsample.domain.entity.Word;
+
 import java.util.List;
 
 public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordViewtHolder> {
@@ -24,7 +26,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
     private final LayoutInflater inflater;
     private List<Word> words;
 
-    WordListAdapter(Context context) {
+    public WordListAdapter(Context context) {
         inflater = LayoutInflater.from(context);
     }
 
@@ -45,7 +47,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
         }
     }
 
-    void setWords(List<Word> words) {
+    public void setWords(List<Word> words) {
         this.words = words;
         notifyDataSetChanged();
     }

@@ -1,8 +1,11 @@
-package com.home.fomakin.roomwordsample;
+package com.home.fomakin.roomwordsample.domain;
 
 import android.app.Application;
 import android.arch.lifecycle.LiveData;
 import android.os.AsyncTask;
+
+import com.home.fomakin.roomwordsample.domain.dao.WordDao;
+import com.home.fomakin.roomwordsample.domain.entity.Word;
 
 import java.util.List;
 

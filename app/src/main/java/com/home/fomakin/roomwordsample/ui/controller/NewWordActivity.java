@@ -1,4 +1,4 @@
-package com.home.fomakin.roomwordsample;
+package com.home.fomakin.roomwordsample.ui.controller;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.home.fomakin.roomwordsample.R;
 
 public class NewWordActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.home.fomakin.roomwordsample;
+package com.home.fomakin.roomwordsample.domain.entity;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;

@@ -1,4 +1,4 @@
-package com.home.fomakin.roomwordsample;
+package com.home.fomakin.roomwordsample.domain;
 
 import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
@@ -7,6 +7,9 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
+
+import com.home.fomakin.roomwordsample.domain.dao.WordDao;
+import com.home.fomakin.roomwordsample.domain.entity.Word;
 
 @Database(entities = {Word.class}, version = 1)
 public abstract class WordRoomDatabase extends RoomDatabase {

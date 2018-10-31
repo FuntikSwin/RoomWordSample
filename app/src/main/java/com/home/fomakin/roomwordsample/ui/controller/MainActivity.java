@@ -1,13 +1,11 @@
-package com.home.fomakin.roomwordsample;
+package com.home.fomakin.roomwordsample.ui.controller;
 
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -16,6 +14,11 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.home.fomakin.roomwordsample.R;
+import com.home.fomakin.roomwordsample.domain.entity.Word;
+import com.home.fomakin.roomwordsample.WordListAdapter;
+import com.home.fomakin.roomwordsample.ui.viewModel.WordViewModel;
 
 import java.util.List;
 

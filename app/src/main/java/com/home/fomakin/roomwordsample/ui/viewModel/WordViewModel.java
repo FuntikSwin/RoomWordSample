@@ -1,9 +1,12 @@
-package com.home.fomakin.roomwordsample;
+package com.home.fomakin.roomwordsample.ui.viewModel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
+
+import com.home.fomakin.roomwordsample.domain.entity.Word;
+import com.home.fomakin.roomwordsample.domain.WordRepository;
 
 import java.util.List;
 
@@ -18,7 +21,7 @@ public class WordViewModel extends AndroidViewModel {
         allWords = repository.getAllWords();
     }
 
-    LiveData<List<Word>> getAllWords() {
+    public LiveData<List<Word>> getAllWords() {
         return allWords;
     }
 
